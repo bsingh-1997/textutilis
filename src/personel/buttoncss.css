@@ -1,0 +1,30 @@
+.buttons ul li{
+    list-style:none;
+    display: flex;
+    margin-right: 15px;
+    translate: 130px -53px;
+    color: white;
+    
+    
+}
+.buttons ul{
+    display: flex;
+    color: white;
+}
+.b{
+    color: black;
+}
+.buttons1 ul li{
+    list-style:none;
+    display: flex;
+    margin-right: 15px;
+    translate: 130px -40px;
+    color: white;  
+}
+.buttons1 ul{
+    display: flex;
+    color: white;
+}
+.c{
+    color: black;
+}
