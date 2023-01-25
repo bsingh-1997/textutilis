@@ -21,51 +21,48 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const [mode,setmode]=useState('light')
-  const [alert,setalert]= useState(null)
-  const showalert=(message,type)=>{
+  const [mode, setmode] = useState('light')
+  const [alert, setalert] = useState(null)
+  const showalert = (message, type) => {
     setalert({
-      message:message,
-      type:type
+      message: message,
+      type: type
     })
     setTimeout(() => {
       setalert(null)
     }, 1500);
   }
-  const tgm=()=>{
-    if(mode==='light'){
-    setmode("dark")
-    document.body.style.backgroundColor='grey'
-    document.title='Text-utility Dark mode'
-    showalert("Dark mode has been enabled sucessfully","success")
+  const tgm = () => {
+    if (mode === 'light') {
+      setmode("dark")
+      document.body.style.backgroundColor = 'grey'
+      document.title = 'Text-utility Dark mode'
+      showalert("Dark mode has been enabled sucessfully", "success")
     }
-    else{
+    else {
       setmode('light')
-      document.body.style.backgroundColor='white'
-      document.title='Text-utility'
-
+      document.body.style.backgroundColor = 'white'
+      document.title = 'Text-utility'
     }
   }
   return (
     <>
-   
+      <Header name="Text-Utils" mode={mode} tgm={tgm} />
+      <Alert alert={alert} />
 
-    <Header name="Text-Utils" mode={mode} tgm={tgm}/>
-    <Alert alert = {alert}/>
+      <BrowserRouter>
+        {/* <Switch> */}
+        <Routes>
+          {/* <Route path="/textutilis" element={<Middleform showalert={showalert} mode = {mode}/>}></Route> */}
+          <Route exact path="/about" element={<Middle />} />
+          <Route exact path='/' element={<Middleform showalert={showalert} mode={mode} />} />
+        </Routes>
 
-     <BrowserRouter>
-      {/* <Switch> */}
-      <Routes>
-            {/* <Route path="/" element={<Middleform showalert={showalert} mode = {mode}/>}></Route> */}
-            <Route path='/' element={<Middleform showalert={showalert} mode = {mode}/>}/>
-            <Route path="/about" element={<Middle/>}/>
-      </Routes>  
-
-      {/* </Switch> */}
-     </BrowserRouter> 
+        {/* </Switch> */}
+      </BrowserRouter>
 
 
-    {/* <Middle 
+      {/* <Middle 
     body1="this is stuff for body 1"
     body2="this is stuff for body two"
     body3="this is stuff for body 3ree"
