@@ -56,8 +56,8 @@ function App() {
      <BrowserRouter>
       {/* <Switch> */}
       <Routes>
-            {/* <Route path="https://bsingh-1997.github.io/textutilis/" element={<Middleform showalert={showalert} mode = {mode}/>}></Route> */}
-            <Route path='https://bsingh-1997.github.io/textutilis/' element={<Middleform showalert={showalert} mode = {mode}/>}/>
+            {/* <Route path="/textutilis" element={<Middleform showalert={showalert} mode = {mode}/>}></Route> */}
+            <Route path='/textutilis' element={<Middleform showalert={showalert} mode = {mode}/>}/>
             <Route path="/about" element={<Middle/>}/>
       </Routes>  
 
