@@ -12,7 +12,7 @@ const Middle = (props) => {
             <li><NavLink to="/about" className="c">About</NavLink></li>
           </ul>
         </div>
-        <div className="accordion my-4" id="accordionExample" style={{ backgroundColor: props.mode === 'dark' ? 'white' : 'grey' }}>
+        {/* <div className="accordion my-4" id="accordionExample" style={{ backgroundColor: props.mode === 'dark' ? 'white' : 'grey' }}>
           <div className="card" style={{ backgroundColor: props.mode === 'dark' ? '#343a40' : 'white' }}>
             <div className="card-header" id="headingOne">
               <h2 className="mb-0">
@@ -59,16 +59,16 @@ const Middle = (props) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className='container'>
         <div className="jumbotron" style={{ backgroundColor: props.mode === 'dark' ? '#343a40' : 'white' }}>
-          <h1 className="display-4" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>Hello, world!</h1>
-          <p className="lead" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <h1 className="display-4" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>Text-Utilis!</h1>
+          <p className="lead" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>This is a simple text utilis app made using html,css,javascript,reactJs and github.Dark mode is also used in this website to enhance the user experience .</p>
           <hr className="my-4" style={{ color: props.mode === 'dark' ? 'white' : 'black' }} />
-          <p style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <p style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>The estimated reading time is also calculated after the text is entered inside input box .</p>
           <a className="btn btn-primary btn-lg" href="#" role="button" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>Learn more</a>
-          <NavLink to="/">home</NavLink>
+          
         </div>
       </div>
     </>
