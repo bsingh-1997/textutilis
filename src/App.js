@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Middleform from './personel/middleform';
 import Alert from './personel/alert';
 import React from 'react';
-
+import Content from './personel/content';
 import {
   BrowserRouter,
   Route,
@@ -47,7 +47,8 @@ function App() {
 
         <Routes>
 
-          <Route path='/textutilis' element={<Middleform showalert={showalert} mode={mode} />} />
+          {/* <Route path='/textutilis' element={<Middleform showalert={showalert} mode={mode} />} /> */}
+          <Route path='/textutilis' element={<Content/>} />
           <Route exact path="/about" element={<Middle />} />
 
         </Routes>
