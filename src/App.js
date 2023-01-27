@@ -56,7 +56,7 @@ function App() {
           {/* <Route path="/textutilis" element={<Middleform showalert={showalert} mode = {mode}/>}></Route> */}
           {/* <Route exact path='/textutilis' element={<Header name="Text-Utils" mode={mode} tgm={tgm} />}/> */}
           {/* <Route exact path='/about' element={<Alert alert={alert} />}/> */}
-          <Route exact path='/textutilis' element={<Middleform showalert={showalert} mode={mode} />} />
+          <Route path='/textutilis' element={<Middleform showalert={showalert} mode={mode} />} />
           <Route exact path="/abouft" element={<Middle />} />
         </Routes>
 
