@@ -2,7 +2,10 @@
 import { NavLink } from 'react-router-dom'
 import React,{useState} from 'react'
 import './buttoncss.css';
- export default function Middleform(props) {
+
+
+//  export default function Middleform(props) {
+ function Middleform(props) {
 
 
   const[mystyle,setmystyle] = useState({
@@ -122,3 +125,5 @@ import './buttoncss.css';
      </div>
    )
 }
+
+export default Middleform()
