@@ -50,6 +50,7 @@ function App() {
           <Route path='/textutilis' element={<Middleform showalert={showalert} mode={mode} />} ></Route>
           <Route exact path='/textutilis' element={<Content/>}></Route>
           {/* <Route exact path="/about" element={<Middle />} /> */}
+          <Route exact path="/about" element={<Middle />}></Route>
 
         </Routes>
 
