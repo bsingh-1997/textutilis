@@ -8,7 +8,7 @@ const Middle = (props) => {
       <div className='container'  >
         <div className='buttons1'>
           <ul>
-            <li><NavLink to="/" className="c">Home</NavLink></li>
+            <li><NavLink to="/textutilis" className="c">Home</NavLink></li>
             <li><NavLink to="/about" className="c">About</NavLink></li>
           </ul>
         </div>
