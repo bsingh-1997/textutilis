@@ -48,7 +48,7 @@ function App() {
   return (
     <>
       <Header name="Text-Utils" mode={mode} tgm={tgm} />
-      {/* <Alert alert={alert} /> */}
+      <Alert alert={alert} />
 
       <BrowserRouter basename='/textutilis'>
         {/* <Switch> */}
