@@ -47,15 +47,17 @@ function App() {
   }
   return (
     <>
-      <Header name="Text-Utils" mode={mode} tgm={tgm} />
-      <Alert alert={alert} />
+      {/* <Header name="Text-Utils" mode={mode} tgm={tgm} /> */}
+      {/* <Alert alert={alert} /> */}
 
-      <BrowserRouter>
+      <BrowserRouter basename='/textutilis'>
         {/* <Switch> */}
         <Routes>
           {/* <Route path="/textutilis" element={<Middleform showalert={showalert} mode = {mode}/>}></Route> */}
-          <Route exact path="/about" element={<Middle />} />
+          <Route exact path='/textutilis' element={<Header name="Text-Utils" mode={mode} tgm={tgm} />}/>
+          <Route exact path='/textutilis' element={      <Alert alert={alert} />}/>
           <Route exact path='/textutilis' element={<Middleform showalert={showalert} mode={mode} />} />
+          <Route exact path="/about" element={<Middle />} />
         </Routes>
 
         {/* </Switch> */}
