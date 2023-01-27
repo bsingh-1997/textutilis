@@ -7,7 +7,7 @@ import Alert from './personel/alert';
 import React from 'react';
 import Content from './personel/content';
 import {
-  HashRouter,
+  BrowserRouter,
   Route,
   Routes
 } from "react-router-dom";
@@ -43,17 +43,17 @@ function App() {
       <Header name="Text-Utils" mode={mode} tgm={tgm} />
       <Alert alert={alert} />
       {/* <Content/> */}
-      <HashRouter>
+      <BrowserRouter>
 
         <Routes>
 
           {/* <Route path='/textutilis' element={<Middleform showalert={showalert} mode={mode} />} /> */}
-          <Route exact path='/textutilis' element={<Content/>} />
+          <Route exact path='/textutilis' element={<Content/>}></Route>
           {/* <Route exact path="/about" element={<Middle />} /> */}
 
         </Routes>
 
-      </HashRouter>
+      </BrowserRouter>
 
     </>
   );
