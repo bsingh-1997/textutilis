@@ -53,7 +53,7 @@ export default function Middleform(props) {
     <div className='container my-3'>
       <div className='buttons'>
         <ul>
-          <li><NavLink to="/" className="b">Home</NavLink></li>
+          <li><NavLink to="/textutilis" className="b">Home</NavLink></li>
           <li><NavLink to="/about" className="b">About</NavLink></li>
         </ul>
       </div>
