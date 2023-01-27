@@ -1,7 +1,10 @@
 {
   "name": "bsbsbs",
   "version": "0.1.0",
+<<<<<<< HEAD
   "homepage": "https://bsingh-1997.github.io/textutilis",
+=======
+>>>>>>> 22a6a3005791076be0c123eb1d0e9c7351119599
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
