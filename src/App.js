@@ -42,13 +42,13 @@ function App() {
     <>
       <Header name="Text-Utils" mode={mode} tgm={tgm} />
       <Alert alert={alert} />
-
+      <Content/>
       <BrowserRouter basename='/textutilis'>
 
         <Routes>
 
           {/* <Route path='/textutilis' element={<Middleform showalert={showalert} mode={mode} />} /> */}
-          <Route path='/textutilis' element={<Content/>} />
+          {/* <Route path='/textutilis' element={<Content/>} /> */}
           <Route exact path="/about" element={<Middle />} />
 
         </Routes>
