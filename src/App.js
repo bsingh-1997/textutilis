@@ -55,7 +55,7 @@ function App() {
         <Routes>
           {/* <Route path="/textutilis" element={<Middleform showalert={showalert} mode = {mode}/>}></Route> */}
           <Route exact path="/about" element={<Middle />} />
-          <Route exact path='/' element={<Middleform showalert={showalert} mode={mode} />} />
+          <Route exact path='/textutilis' element={<Middleform showalert={showalert} mode={mode} />} />
         </Routes>
 
         {/* </Switch> */}
