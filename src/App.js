@@ -42,7 +42,7 @@ function App() {
     <>
       <Header name="Text-Utils" mode={mode} tgm={tgm} />
       <Alert alert={alert} />
-      <Content/>
+      {/* <Content/> */}
       <HashRouter>
 
         <Routes>
