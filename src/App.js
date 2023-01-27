@@ -43,7 +43,7 @@ function App() {
       <Header name="Text-Utils" mode={mode} tgm={tgm} />
       <Alert alert={alert} />
       <Content/>
-      <HashRouter basename='/textutilis'>
+      <HashRouter>
 
         <Routes>
 
