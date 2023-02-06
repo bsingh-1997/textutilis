@@ -77,7 +77,7 @@ export default function Middleform(props) {
           </div>
         </form>
           <div className='container'>
-          <button type="submit" className="btn btn-primary eresp2 " onClick={oncl}>Convert to Uppercase!</button>
+          <button type="submit" className="btn btn-primary eresp eresp2 " onClick={oncl}>Convert to Uppercase!</button>
           <button type="submit" className="btn btn-primary mx-2 eresp" onClick={onlo}>Convert to Lowercase!</button>
           {/* <button type="submit" className="btn btn-primary mx-2 eresp" onClick={onuc}>Uppercase 1st letter</button> */}
           <button type="submit" className="btn btn-primary mx-2 eresp" onClick={cltxt}>Cleartext</button>
