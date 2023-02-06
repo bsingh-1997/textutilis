@@ -46,34 +46,52 @@ export default function Middleform(props) {
     console.log("working", newtext)
     props.showalert("Cleared successfully", "success")
   }
+  const handlecopy=()=>{
+    var text = document.getElementById("mybox")
+    text.select()
+    navigator.clipboard.writeText(text.value)
+    props.showalert("Copied successfully", "success")
+  }
+  const handleextraspace=(e)=>{
+    e.preventDefault()
+    let newText = text.split(/[ ]+/)
+    settext(newText.join(" "))
+    props.showalert("Extra spaces removed successfully", "success")
+  }
 
 
   return (
 
     <div className='container my-3'>
-      <div className='buttons'>
+      {/* <div className='buttons'>
         <ul>
           <li><NavLink to="/textutilis" className="b">Home</NavLink></li>
           <li><NavLink to="/about" className="b">About</NavLink></li>
         </ul>
-      </div>
+      </div> */}
       <div className='container' style={{ backgroundColor: props.mode === 'dark' ? '#343a40' : 'white' }}>
         <form>
           <div className="form-group">
-            <label for="exampleInputEmail1" style={{ color: props.mode === 'dark' ? 'white' : 'black' }} ><h4>Enter the text below to analyze</h4></label>
-            <input type="text" className="form-control" id="exampleInputEmail1" value={text} onChange={onchn} aria-describedby="emailHelp" />
+            <label htmlFor="exampleInputEmail1" style={{ color: props.mode === 'dark' ? 'white' : 'black' }} ><h4>Enter the text below to analyze</h4></label>
+            <input type="text" className="form-control" id="mybox" value={text} onChange={onchn} aria-describedby="emailHelp" />
           </div>
-          <button type="submit" className="btn btn-primary" onClick={oncl}>Uppercase</button>
-          <button type="submit" className="btn btn-primary mx-2" onClick={onlo}>Lowercasee</button>
-          <button type="submit" className="btn btn-primary mx-2" onClick={onuc}>Uppercase 1st letter</button>
-          <button type="submit" className="btn btn-primary mx-2" onClick={cltxt}>Cleartext</button>
         </form>
+          <div className='container'>
+          <button type="submit" className="btn btn-primary eresp2 " onClick={oncl}>Convert to Uppercase!</button>
+          <button type="submit" className="btn btn-primary mx-2 eresp" onClick={onlo}>Convert to Lowercase!</button>
+          {/* <button type="submit" className="btn btn-primary mx-2 eresp" onClick={onuc}>Uppercase 1st letter</button> */}
+          <button type="submit" className="btn btn-primary mx-2 eresp" onClick={cltxt}>Cleartext</button>
+          
+          <button type="submit" className="btn btn-primary mx-2 eresp" onClick={handlecopy}>Copy text!</button>
+          <button type="submit" className="btn btn-primary mx-2 eresp" onClick={handleextraspace}>Remove extra spaces!</button>
+          
+          </div>
         <h4 className='my-4' style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
           Your text summary
         </h4>
 
         <p style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
-          the characters are {text.length} and words are {text.split(" ").length - 1}
+          The characters are {text.length} and words are {text.split(" ").length - 1}
         </p>
         <p style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
           {0.008 * (text.split(" ").length - 1)} minutes read
@@ -88,3 +106,4 @@ export default function Middleform(props) {
     </div>
   )
 }
+

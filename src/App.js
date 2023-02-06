@@ -40,10 +40,10 @@ function App() {
 
   return (
     <>
-      <Header name="Text-Utils" mode={mode} tgm={tgm} />
-      <Alert alert={alert} />
       {/* <Content/> */}
       <BrowserRouter>
+      <Header name="Text-Utils" mode={mode} tgm={tgm} />
+      <Alert alert={alert} />
 
         <Routes>
 
