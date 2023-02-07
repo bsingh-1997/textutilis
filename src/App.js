@@ -27,7 +27,7 @@ function App() {
   const tgm = () => {
     if (mode === 'light') {
       setmode("dark")
-      document.body.style.backgroundColor = 'grey'
+      document.body.style.backgroundColor = '#343a43'
       document.title = 'Text-utility Dark mode'
       showalert("Dark mode has been enabled sucessfully", "success")
     }
